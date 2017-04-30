@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1jQ-3j-NEB">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,26 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PlayerVC-->
         <scene sceneID="c89-DV-yYj">
             <objects>
-                <viewController id="1jQ-3j-NEB" sceneMemberID="viewController">
+                <viewController id="1jQ-3j-NEB" customClass="LCPlayerVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="To8-RM-48A"/>
                         <viewControllerLayoutGuide type="bottom" id="eac-J5-dcr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Iow-JB-ipW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lkq.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-IA-8pQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-dw-oTR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月半小夜曲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCm-HJ-sVY" userLabel="歌曲名">
-                                        <rect key="frame" x="144.5" y="30" width="87" height="40"/>
+                                        <rect key="frame" x="164" y="30" width="87" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="RhH-EX-bZW"/>
                                         </constraints>
@@ -46,7 +46,7 @@
                                         <state key="normal" image="miniplayer_btn_playlist_close_b"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa0-HM-4UA">
-                                        <rect key="frame" x="315" y="30" width="40" height="40"/>
+                                        <rect key="frame" x="354" y="30" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="EiW-Od-br1"/>
                                             <constraint firstAttribute="height" constant="40" id="Qut-v1-LbR"/>
@@ -54,7 +54,7 @@
                                         <state key="normal" image="main_tab_more"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李克勤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoL-Kd-8Zf" userLabel="歌手名字">
-                                        <rect key="frame" x="166.5" y="71" width="43" height="17"/>
+                                        <rect key="frame" x="186" y="71" width="43" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="fwO-gp-jY7"/>
                                         </constraints>
@@ -77,10 +77,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQz-Ak-R0a">
-                                <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="586" width="414" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-BW-tS6">
-                                        <rect key="frame" x="333" y="15" width="42" height="21"/>
+                                        <rect key="frame" x="372" y="15" width="42" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="31r-d3-qeA"/>
                                             <constraint firstAttribute="width" constant="42" id="Vrb-Ft-dki"/>
@@ -100,13 +100,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-Vk-Qo0">
-                                        <rect key="frame" x="249.5" y="56" width="64" height="64"/>
+                                        <rect key="frame" x="269" y="56" width="64" height="64"/>
                                         <state key="normal" image="player_btn_next_normal"/>
                                         <state key="selected" image="player_btn_pause_normal"/>
                                         <state key="highlighted" image="player_btn_next_highlight"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-5u-YAh">
-                                        <rect key="frame" x="155.5" y="56" width="64" height="64"/>
+                                        <rect key="frame" x="175" y="56" width="64" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="GoY-Ck-7av"/>
                                             <constraint firstAttribute="width" constant="64" id="jZ9-B5-Mbu"/>
@@ -117,7 +117,7 @@
                                         <state key="selected" image="player_btn_pause_normal"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svl-2b-qqZ">
-                                        <rect key="frame" x="61.5" y="56" width="64" height="64"/>
+                                        <rect key="frame" x="81" y="56" width="64" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="W9d-KB-O9N"/>
                                             <constraint firstAttribute="width" constant="64" id="s08-TE-N4i"/>
@@ -126,8 +126,8 @@
                                         <state key="selected" image="player_btn_pause_normal"/>
                                         <state key="highlighted" image="player_btn_pre_highlight"/>
                                     </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qs3-2O-UHN">
-                                        <rect key="frame" x="40" y="11" width="295" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qs3-2O-UHN">
+                                        <rect key="frame" x="40" y="11" width="334" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="FoP-jL-xnk"/>
                                         </constraints>
@@ -155,7 +155,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌词的Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI3-F6-y6d">
-                                <rect key="frame" x="143" y="468" width="89" height="19"/>
+                                <rect key="frame" x="163" y="537" width="89" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19.5" id="LZv-lS-ALa"/>
                                 </constraints>
@@ -164,7 +164,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lkq.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hgD-OW-Ni9">
-                                <rect key="frame" x="33.5" y="130" width="308" height="308"/>
+                                <rect key="frame" x="19" y="130" width="377" height="377"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hgD-OW-Ni9" secondAttribute="height" multiplier="1:1" id="QBz-CJ-gIa"/>
                                 </constraints>
@@ -189,6 +189,11 @@
                             <constraint firstAttribute="trailing" secondItem="Rqd-dw-oTR" secondAttribute="trailing" id="wFG-tm-2Ih"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageV" destination="c5F-IA-8pQ" id="ZcH-RK-BAL"/>
+                        <outlet property="iconImageV" destination="hgD-OW-Ni9" id="8Av-Jv-yOe"/>
+                        <outlet property="musicProgress" destination="qs3-2O-UHN" id="Pdv-wP-DHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucW-Ta-ICI" sceneMemberID="firstResponder"/>
             </objects>
