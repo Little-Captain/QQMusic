@@ -191,8 +191,13 @@
                     </view>
                     <connections>
                         <outlet property="albumImageV" destination="c5F-IA-8pQ" id="ZcH-RK-BAL"/>
+                        <outlet property="currentL" destination="vOw-tk-cOp" id="JoV-j3-i4u"/>
                         <outlet property="iconImageV" destination="hgD-OW-Ni9" id="8Av-Jv-yOe"/>
                         <outlet property="musicProgress" destination="qs3-2O-UHN" id="Pdv-wP-DHA"/>
+                        <outlet property="playOrPauseBtn" destination="Bfx-5u-YAh" id="udE-L3-7T4"/>
+                        <outlet property="singerL" destination="GoL-Kd-8Zf" id="AqC-ru-QPo"/>
+                        <outlet property="songL" destination="MCm-HJ-sVY" id="6MJ-NZ-Eoo"/>
+                        <outlet property="totalL" destination="BeL-BW-tS6" id="m8c-H0-HtA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucW-Ta-ICI" sceneMemberID="firstResponder"/>

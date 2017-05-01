@@ -20,12 +20,21 @@
 // 2. viewDidDisappear
 
 #import "LCPlayerVC.h"
+#import "LCMusicTool.h"
+#import "LCAudioTool.h"
+#import "LCMusicItem.h"
+#import "NSString+LCExtension.h"
 
 @interface LCPlayerVC ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *albumImageV;
 @property (weak, nonatomic) IBOutlet UISlider *musicProgress;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageV;
+@property (weak, nonatomic) IBOutlet UILabel *songL;
+@property (weak, nonatomic) IBOutlet UILabel *singerL;
+@property (weak, nonatomic) IBOutlet UILabel *totalL;
+@property (weak, nonatomic) IBOutlet UILabel *currentL;
+@property (weak, nonatomic) IBOutlet UIButton *playOrPauseBtn;
 
 @end
 
@@ -41,6 +50,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         
         [self setUpUI];
+        [self startPlayingMusic];
     });
 }
 
@@ -68,6 +78,24 @@
     _iconImageV.layer.masksToBounds = YES;
     _iconImageV.layer.borderWidth = 8;
     _iconImageV.layer.borderColor = [UIColor lightGrayColor].CGColor;
+}
+
+- (void)startPlayingMusic {
+    
+    // 获取当前正在播放的音乐
+    LCMusicItem *musicItem = [LCMusicTool playingMusic];
+    // 更新界面信息
+    _albumImageV.image = [UIImage imageNamed:musicItem.singerIcon];
+    _iconImageV.image = [UIImage imageNamed:musicItem.icon];
+    _songL.text = musicItem.name;
+    _singerL.text = musicItem.singer;
+    // 播放音乐
+    AVAudioPlayer *player = [LCAudioTool playMusic:musicItem.filename];
+    // 更新当前的播放时间以及播放的总时间
+    _currentL.text = [NSString musicTimeFormater:player.currentTime];
+    _totalL.text = [NSString musicTimeFormater:player.duration];
+    // 更新按钮状态
+    _playOrPauseBtn.selected = player.isPlaying;
 }
 
 @end

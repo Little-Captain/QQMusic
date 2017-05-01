@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@class LCMusicItem;
+
 @interface LCMusicTool : NSObject
+
+/** 获取/修改当前播放的歌曲 */
++ (LCMusicItem *)playingMusic;
+
+/** 获取下一首歌曲 */
++ (LCMusicItem *)nextMusic;
+
+/** 获取上一首歌曲 */
++ (LCMusicItem *)previousMusic;
 
 @end

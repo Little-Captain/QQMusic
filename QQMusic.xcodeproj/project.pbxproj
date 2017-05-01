@@ -56,6 +56,8 @@
 		9542F0F91EB58FC20085D392 /* LCPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542F0F81EB58FC20085D392 /* LCPlayerVC.m */; };
 		9542F0FC1EB59BA40085D392 /* LCMusicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542F0FB1EB59BA40085D392 /* LCMusicItem.m */; };
 		9542F1001EB59CD70085D392 /* LCMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542F0FF1EB59CD70085D392 /* LCMusicTool.m */; };
+		9568D9951EB6B53100D7CE68 /* LCAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9941EB6B53100D7CE68 /* LCAudioTool.m */; };
+		9568D9991EB6BF6200D7CE68 /* NSString+LCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9981EB6BF6200D7CE68 /* NSString+LCExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +118,10 @@
 		9542F0FB1EB59BA40085D392 /* LCMusicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMusicItem.m; sourceTree = "<group>"; };
 		9542F0FE1EB59CD70085D392 /* LCMusicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMusicTool.h; sourceTree = "<group>"; };
 		9542F0FF1EB59CD70085D392 /* LCMusicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMusicTool.m; sourceTree = "<group>"; };
+		9568D9931EB6B53100D7CE68 /* LCAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAudioTool.h; sourceTree = "<group>"; };
+		9568D9941EB6B53100D7CE68 /* LCAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAudioTool.m; sourceTree = "<group>"; };
+		9568D9971EB6BF6200D7CE68 /* NSString+LCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LCExtension.h"; sourceTree = "<group>"; };
+		9568D9981EB6BF6200D7CE68 /* NSString+LCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LCExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +232,7 @@
 		9542F0A01EB58BD70085D392 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				9568D9961EB6BF4D00D7CE68 /* Category */,
 				9542F0FD1EB59CB80085D392 /* Tools */,
 			);
 			path = Other;
@@ -308,8 +315,19 @@
 			children = (
 				9542F0FE1EB59CD70085D392 /* LCMusicTool.h */,
 				9542F0FF1EB59CD70085D392 /* LCMusicTool.m */,
+				9568D9931EB6B53100D7CE68 /* LCAudioTool.h */,
+				9568D9941EB6B53100D7CE68 /* LCAudioTool.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		9568D9961EB6BF4D00D7CE68 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9568D9971EB6BF6200D7CE68 /* NSString+LCExtension.h */,
+				9568D9981EB6BF6200D7CE68 /* NSString+LCExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		C6F94813155C818065848AB2 /* Pods */ = {
@@ -488,6 +506,8 @@
 				9542F0891EB58A670085D392 /* AppDelegate.m in Sources */,
 				9542F0861EB58A670085D392 /* main.m in Sources */,
 				9542F1001EB59CD70085D392 /* LCMusicTool.m in Sources */,
+				9568D9951EB6B53100D7CE68 /* LCAudioTool.m in Sources */,
+				9568D9991EB6BF6200D7CE68 /* NSString+LCExtension.m in Sources */,
 				9542F0F91EB58FC20085D392 /* LCPlayerVC.m in Sources */,
 				9542F0FC1EB59BA40085D392 /* LCMusicItem.m in Sources */,
 			);
