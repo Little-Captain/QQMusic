@@ -1,12 +1,18 @@
 PODS:
+  - Masonry (1.0.2)
   - MJExtension (3.0.13)
+  - RXCollections (1.0)
 
 DEPENDENCIES:
+  - Masonry
   - MJExtension
+  - RXCollections
 
 SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  RXCollections: ef46a1c3b1f25711117ece94c48d9beae9f143a6
 
-PODFILE CHECKSUM: cd89476135edc2486468d4f85ab8e47ebfc2ae68
+PODFILE CHECKSUM: 64995450a475feef1407af404c1619dd1bc087b7
 
 COCOAPODS: 1.2.0

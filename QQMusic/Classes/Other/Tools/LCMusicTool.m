@@ -24,10 +24,18 @@ static NSArray<LCMusicItem *> *_musics;
     return _musics;
 }
 
+static LCMusicItem *_playingMusic;
 /** 获取/修改当前播放的歌曲 */
 + (LCMusicItem *)playingMusic {
     
-    return [self allMusics][1];
+    if (_playingMusic) { return _playingMusic; }
+    
+    return [self allMusics][0];
+}
+
++ (void)setPlayingMusic:(LCMusicItem *)musicItem {
+    
+    _playingMusic = musicItem;
 }
 
 /** 获取下一首歌曲 */

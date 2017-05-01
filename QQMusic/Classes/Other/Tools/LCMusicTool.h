@@ -14,6 +14,7 @@
 
 /** 获取/修改当前播放的歌曲 */
 + (LCMusicItem *)playingMusic;
++ (void)setPlayingMusic:(LCMusicItem *)musicItem;
 
 /** 获取下一首歌曲 */
 + (LCMusicItem *)nextMusic;

@@ -7,4 +7,6 @@ target 'QQMusic' do
 
   # Pods for QQMusic
     pod 'MJExtension'
+    pod 'RXCollections'
+    pod 'Masonry'
 end

@@ -58,6 +58,12 @@
 		9542F1001EB59CD70085D392 /* LCMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542F0FF1EB59CD70085D392 /* LCMusicTool.m */; };
 		9568D9951EB6B53100D7CE68 /* LCAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9941EB6B53100D7CE68 /* LCAudioTool.m */; };
 		9568D9991EB6BF6200D7CE68 /* NSString+LCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9981EB6BF6200D7CE68 /* NSString+LCExtension.m */; };
+		9568D99C1EB6CC0700D7CE68 /* CALayer+PauseAimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D99B1EB6CC0700D7CE68 /* CALayer+PauseAimate.m */; };
+		9568D9A21EB704C400D7CE68 /* LCLrcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9A11EB704C400D7CE68 /* LCLrcView.m */; };
+		9568D9A51EB7068200D7CE68 /* LCLrcParseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9A41EB7068200D7CE68 /* LCLrcParseTool.m */; };
+		9568D9A81EB706A200D7CE68 /* LCLrcLineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9A71EB706A200D7CE68 /* LCLrcLineItem.m */; };
+		9568D9C51EB75DB500D7CE68 /* LCLrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9C41EB75DB500D7CE68 /* LCLrcLabel.m */; };
+		9568D9C81EB75F7600D7CE68 /* LCLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9568D9C71EB75F7600D7CE68 /* LCLrcCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +128,18 @@
 		9568D9941EB6B53100D7CE68 /* LCAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAudioTool.m; sourceTree = "<group>"; };
 		9568D9971EB6BF6200D7CE68 /* NSString+LCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LCExtension.h"; sourceTree = "<group>"; };
 		9568D9981EB6BF6200D7CE68 /* NSString+LCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LCExtension.m"; sourceTree = "<group>"; };
+		9568D99A1EB6CC0700D7CE68 /* CALayer+PauseAimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+PauseAimate.h"; sourceTree = "<group>"; };
+		9568D99B1EB6CC0700D7CE68 /* CALayer+PauseAimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PauseAimate.m"; sourceTree = "<group>"; };
+		9568D9A01EB704C400D7CE68 /* LCLrcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLrcView.h; sourceTree = "<group>"; };
+		9568D9A11EB704C400D7CE68 /* LCLrcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLrcView.m; sourceTree = "<group>"; };
+		9568D9A31EB7068200D7CE68 /* LCLrcParseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLrcParseTool.h; sourceTree = "<group>"; };
+		9568D9A41EB7068200D7CE68 /* LCLrcParseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLrcParseTool.m; sourceTree = "<group>"; };
+		9568D9A61EB706A200D7CE68 /* LCLrcLineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLrcLineItem.h; sourceTree = "<group>"; };
+		9568D9A71EB706A200D7CE68 /* LCLrcLineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLrcLineItem.m; sourceTree = "<group>"; };
+		9568D9C31EB75DB500D7CE68 /* LCLrcLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLrcLabel.h; sourceTree = "<group>"; };
+		9568D9C41EB75DB500D7CE68 /* LCLrcLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLrcLabel.m; sourceTree = "<group>"; };
+		9568D9C61EB75F7600D7CE68 /* LCLrcCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLrcCell.h; sourceTree = "<group>"; };
+		9568D9C71EB75F7600D7CE68 /* LCLrcCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLrcCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +236,8 @@
 			children = (
 				9542F0FA1EB59BA40085D392 /* LCMusicItem.h */,
 				9542F0FB1EB59BA40085D392 /* LCMusicItem.m */,
+				9568D9A61EB706A200D7CE68 /* LCLrcLineItem.h */,
+				9568D9A71EB706A200D7CE68 /* LCLrcLineItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +245,12 @@
 		9542F09F1EB58BD70085D392 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9568D9A01EB704C400D7CE68 /* LCLrcView.h */,
+				9568D9A11EB704C400D7CE68 /* LCLrcView.m */,
+				9568D9C31EB75DB500D7CE68 /* LCLrcLabel.h */,
+				9568D9C41EB75DB500D7CE68 /* LCLrcLabel.m */,
+				9568D9C61EB75F7600D7CE68 /* LCLrcCell.h */,
+				9568D9C71EB75F7600D7CE68 /* LCLrcCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,6 +343,8 @@
 				9542F0FF1EB59CD70085D392 /* LCMusicTool.m */,
 				9568D9931EB6B53100D7CE68 /* LCAudioTool.h */,
 				9568D9941EB6B53100D7CE68 /* LCAudioTool.m */,
+				9568D9A31EB7068200D7CE68 /* LCLrcParseTool.h */,
+				9568D9A41EB7068200D7CE68 /* LCLrcParseTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -326,6 +354,8 @@
 			children = (
 				9568D9971EB6BF6200D7CE68 /* NSString+LCExtension.h */,
 				9568D9981EB6BF6200D7CE68 /* NSString+LCExtension.m */,
+				9568D99A1EB6CC0700D7CE68 /* CALayer+PauseAimate.h */,
+				9568D99B1EB6CC0700D7CE68 /* CALayer+PauseAimate.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -504,8 +534,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9542F0891EB58A670085D392 /* AppDelegate.m in Sources */,
+				9568D9A81EB706A200D7CE68 /* LCLrcLineItem.m in Sources */,
 				9542F0861EB58A670085D392 /* main.m in Sources */,
+				9568D9C81EB75F7600D7CE68 /* LCLrcCell.m in Sources */,
+				9568D9A21EB704C400D7CE68 /* LCLrcView.m in Sources */,
 				9542F1001EB59CD70085D392 /* LCMusicTool.m in Sources */,
+				9568D99C1EB6CC0700D7CE68 /* CALayer+PauseAimate.m in Sources */,
+				9568D9A51EB7068200D7CE68 /* LCLrcParseTool.m in Sources */,
+				9568D9C51EB75DB500D7CE68 /* LCLrcLabel.m in Sources */,
 				9568D9951EB6B53100D7CE68 /* LCAudioTool.m in Sources */,
 				9568D9991EB6BF6200D7CE68 /* NSString+LCExtension.m in Sources */,
 				9542F0F91EB58FC20085D392 /* LCPlayerVC.m in Sources */,
